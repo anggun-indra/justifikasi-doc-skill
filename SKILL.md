@@ -1,29 +1,35 @@
 ---
-name: justifikasi-promosi-doc
-description: Create, revise, and validate Indonesian promotion-justification documents in Google Docs from a candidate CV, role requirements, an existing template, and requested wording or visual references. Use when asked to prepare a justifikasi promosi, revise its rationale or decision section, update the target role throughout a promotion document, or preserve a Google Docs template while adapting its content.
+name: justifikasi-pengajuan-doc
+description: Create, revise, and validate Indonesian administrative justification documents in Google Docs from requirements, supporting evidence, an existing template, and requested wording or visual references. Use when asked to prepare or update a justifikasi promosi, pengadaan barang dan jasa, permohonan mutasi karyawan, or another formal internal submission while preserving its Google Docs structure.
 ---
 
-# Justifikasi Promosi Doc
+# Justifikasi Pengajuan Doc
 
-Create a decision-ready promotion justification while preserving the user's Google Docs structure and keeping personal data out of reusable skill files.
+Create a decision-ready internal justification while preserving the user's Google Docs structure and keeping personal and organizational data out of reusable skill files.
 
 ## Required Inputs
 
 Collect only what is needed for the request:
 
-- the candidate evidence (for example, CV, work history, or portfolio);
-- the authoritative role requirement and exact target job title;
 - the working Google Doc, or a reusable template plus destination folder;
+- the submission type, requester, exact purpose, and requested decision;
+- authoritative supporting evidence and requirements;
 - requested wording, section changes, and any visual reference image.
 
-Ask for a missing input only when it materially changes the document. Do not infer a vacancy, resignation, date, approver, metric, or job requirement without a user-provided source.
+Use the applicable evidence:
+
+- **Promotion:** candidate CV or work history, role requirement, and documented business need.
+- **Procurement:** business need, scope/specification, required quantity or service, budget/timeline only when supplied, and applicable approval requirements.
+- **Employee mutation:** current and proposed placement, documented business reason, role context, and applicable approval requirements.
+
+Ask for a missing input only when it materially changes the document. Do not infer a vacancy, resignation, vendor, budget, date, approver, metric, job requirement, or employee detail without a user-provided source.
 
 ## Privacy Rules
 
-- Treat candidate names, employers, email addresses, CV contents, document URLs, Drive IDs, folder IDs, screenshots, and approval details as task-local confidential data.
+- Treat names, employers, employee data, email addresses, CV contents, procurement details, document URLs, Drive IDs, folder IDs, screenshots, and approval details as task-local confidential data.
 - Never place those values in this skill, bundled resources, example prompts, commit messages, or repository documentation.
-- Use generic placeholders only when an example is necessary, such as `[candidate]`, `[target role]`, or `[working document]`.
-- Do not upload source CVs, screenshots, copied document exports, or generated PDFs to the skill repository unless the user explicitly asks.
+- Use generic placeholders only when an example is necessary, such as `[requester]`, `[submission type]`, `[supporting evidence]`, or `[working document]`.
+- Do not upload source CVs, screenshots, exports, vendor material, or generated PDFs to the skill repository unless the user explicitly asks.
 
 ## Native Google Docs Workflow
 
@@ -36,10 +42,12 @@ Ask for a missing input only when it materially changes the document. Do not inf
 
 ## Content Placement
 
-- Keep the background focused on the documented business reason for the promotion or vacancy.
-- Put candidate experience, technical skills, education, and demonstrated work under the competency-and-role-fit section when that is the intended logic.
-- Update a corrected target role consistently in the document title, headers, footers, metadata, and body only when the user requests a global correction.
-- Ground claims in the candidate evidence and stated requirements. Use cautious language when evidence supports readiness rather than proven outcomes.
+- Keep the background focused on the documented business reason for the submission.
+- Place promotion evidence under competency-and-role fit when that is the intended logic.
+- Place procurement scope, operational need, and service/goods justification in the designated procurement sections; do not invent commercial facts.
+- Place mutation rationale, current/proposed placement, readiness, and organizational considerations in the designated mutation sections; do not infer personal details.
+- Update corrected roles, units, submission titles, or other identifiers consistently across the document only when the user requests a global correction.
+- Ground claims in the supplied evidence and use cautious language when evidence supports readiness or need rather than proven outcomes.
 - When a user supplies a visual reference for a decision row, reproduce only the requested wording, line breaks, and emphasis in the named current row. Retain the current row number and label unless the user explicitly asks to change them.
 - Apply strikethrough, italics, bolding, and blank note space only to the requested ranges. Do not convert them into typed approximations of native controls.
 

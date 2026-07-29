@@ -1,4 +1,4 @@
 interface:
-  display_name: "Justifikasi Promosi"
-  short_description: "Create and revise promotion justifications"
-  default_prompt: "Use $justifikasi-promosi-doc to create or update an Indonesian promotion justification document."
+  display_name: "Justifikasi Pengajuan"
+  short_description: "Draft and revise administrative justifications"
+  default_prompt: "Use $justifikasi-pengajuan-doc to create or update an Indonesian promotion, procurement, or employee-mutation justification."
